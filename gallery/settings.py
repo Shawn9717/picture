@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gallery',
-    'homepage',
-    "bootstrap4",
+    "bootstrap3",
+    "photos",
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'photomania.urls'
+ROOT_URLCONF = 'gallery.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'photomania.wsgi.application'
+WSGI_APPLICATION = 'gallery.wsgi.application'
 
 
 # Database
@@ -79,9 +80,9 @@ WSGI_APPLICATION = 'photomania.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
-        'USER': 'pato',
-    'PASSWORD':'flower2',
+        'NAME': 'gallary',
+        'USER': 'shawn',
+    'PASSWORD':'qwanza',
     }
 }
 

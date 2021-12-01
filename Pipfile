@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 gunicorn = "*"
 python-decouple = "*"
+django-cloudinary-storage = "*"
+django-heroku = "*"
+dj3-cloudinary-storage = "*"
 
 [dev-packages]
 

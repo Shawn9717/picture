@@ -16,6 +16,7 @@ sqlparse = "*"
 django-bootstrap3 = "*"
 cloudinary = "*"
 django-cloudinary-storage = "*"
+django-decouple = "*"
 
 [dev-packages]
 

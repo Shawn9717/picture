@@ -1,5 +1,5 @@
 from django.db import models
-
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 
@@ -38,7 +38,7 @@ class Location(models.Model):
          return updated
 
 class Image(models.Model):
-    image=models.ImageField(upload_to ='images/')
+    image=CloudinaryField('images')
     name=models.CharField(max_length =30)
     description=models.TextField()
     category=models.ForeignKey(Category,on_delete=models.CASCADE)

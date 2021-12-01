@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "58010ed7eeb51b4b367f9639340ee67bbb79b4a8cafd18ce4e957f19ea6bf422"
+            "sha256": "0f992b4a5c29d135fdebcd6bc3184790099b40b5d5404cbc5d790227d1b6af5f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -51,14 +51,6 @@
                 "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
             ],
             "version": "==0.5.0"
-        },
-        "dj3-cloudinary-storage": {
-            "hashes": [
-                "sha256:176632ce59aefad354f558c7d1672f37ac356c4c11d2928256ea854752e481d5",
-                "sha256:bc2d7087abc71e17a6028d60d8f65adfc865cbd9372bf6813ee61e3ad6fead66"
-            ],
-            "index": "pypi",
-            "version": "==0.0.6"
         },
         "django": {
             "hashes": [

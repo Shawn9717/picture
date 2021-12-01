@@ -4,15 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+Django = "*"
 gunicorn = "*"
 python-decouple = "*"
 django-cloudinary-storage = "*"
 django-heroku = "*"
 dj3-cloudinary-storage = "*"
 whitenoise = "*"
-pillow = "*"
+Pillow = "*"
 psycopg2 = "*"
+six = "*"
+sqlparse = "*"
+django-bootstrap3 = "*"
+cloudinary = "*"
 
 [dev-packages]
 

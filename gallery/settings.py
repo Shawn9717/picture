@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 import django_heroku
 import cloudinary
-from decouple import config,Csv
+from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'photos',
     'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,10 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "bootstrap3",
-    "photos",
-    
-    
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -88,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gallary',
         'USER': 'shawn',
-    'PASSWORD':'qwanza',
+        'PASSWORD':'qwanza',
     }
 }
 
@@ -144,13 +142,9 @@ cloudinary.config(
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# configuring the location for media
-
-
-# Configure Django App for Heroku.
 django_heroku.settings(locals())
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 

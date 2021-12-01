@@ -1,4 +1,4 @@
-# Gallery master
+# Picture
 
 Gallery master is an online application that lets a superuser create image posts with their description and have them 
 stored in the application. A user can preview all the images in the gallery, search for specific posts by their name, and view 

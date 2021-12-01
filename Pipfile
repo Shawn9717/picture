@@ -17,6 +17,7 @@ django-bootstrap3 = "*"
 cloudinary = "*"
 django-cloudinary-storage = "*"
 django-decouple = "*"
+django-bootstrap5 = "*"
 
 [dev-packages]
 

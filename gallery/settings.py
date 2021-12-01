@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap3',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -108,6 +108,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+cloudinary.config(
+  cloud_name = config('CLOUDINARY_NAME'),
+  api_key = config('CLOUDINARY_API_KEY'),
+  api_secret = config('CLOUDINARY_SECRET')
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
@@ -133,11 +138,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-cloudinary.config(
-  cloud_name = config('CLOUDINARY_NAME'),
-  api_key = config('CLOUDINARY_API_KEY'),
-  api_secret = config('CLOUDINARY_SECRET')
-)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

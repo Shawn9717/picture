@@ -12,6 +12,7 @@ django-heroku = "*"
 dj3-cloudinary-storage = "*"
 whitenoise = "*"
 pillow = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
